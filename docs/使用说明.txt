@@ -1,0 +1,66 @@
+《Fighting Fantasy Classics》BLOODBONES —— 简体中文汉化补丁 v1.0
+============================================================
+
+【这是什么】
+把 Steam 版《战斗幻想经典》(Fighting Fantasy Classics) 里的免费游戏书
+"Bloodbones（血骨）" 变成全简体中文：
+  · 正文 639 段全部翻译（2,563 个文本块，约 6.5 万字 / 5.7 万汉字）
+  · 选项按钮、战斗按钮、掷骰/谜题/商店等 126 条 UI 文本
+  · 地图上的 106 个地名
+  · 耐力 / 技巧 / 运气 / 金币等术语统一
+  · 字形新增（骷髅、骰子、鹦鹉、蜥蜴…等 130 个生僻字）全部有字，无方块
+
+【安装方法】
+  1. 完全退出游戏（Steam 里显示"停止"就说明还在跑）。
+  2. 双击 FFC_Bloodbones_ZH.exe。
+  3. 程序会自动找到 Steam 安装的游戏目录；
+     找不到时会让你把游戏目录（含 Fighting Fantasy Classics.exe 的那层）粘进去。
+  4. 等它跑完，看到"安装完成"就成了。从 Steam 正常启动游戏即可。
+
+【还原成英文原版】
+  再双击一次 exe，选「2 = 还原为英文原版」。
+  也可以在命令行里执行：FFC_Bloodbones_ZH.exe --restore
+  原始文件备份在：
+    %USERPROFILE%\AppData\LocalLow\Tin Man Games\Fighting Fantasy Classics\_hanhua_backup\
+
+【只检查不改动】
+  FFC_Bloodbones_ZH.exe --check
+
+【注意】
+  · 本补丁只汉化 Bloodbones（免费书）。其他书（DLC）仍是英文。
+  · 字体补丁是全局的：其他书的英文会改用 Noto Sans SC 显示，
+    能正常阅读，只是字形跟原版 Alegreya 略有差别。
+  · 游戏本体更新（Steam 更新）后，字体文件可能被覆盖 → 重新运行一次补丁即可。
+  · 存档、成就、进度不受影响（补丁不碰存档）。
+  · 安装器会先备份原始文件再修改，可随时还原。
+
+【安装器会改动哪些文件】
+  1. <游戏目录>\Fighting Fantasy Classics_Data\sharedassets0.assets
+     —— 字体资产（4 套字体 + 4096×4096 中文 SDF 图集），6.2 MB → 22.7 MB
+  2. %USERPROFILE%\AppData\LocalLow\Tin Man Games\Fighting Fantasy Classics\
+     ffhub.bloodbones\ffhub.bloodbones_book
+     —— 整本 Bloodbones 的中文数据（游戏自己的混淆编码）
+
+【常见问题】
+Q: 重装游戏 / 点了 Steam「验证游戏文件完整性」之后，进游戏全是方块字？
+A: 正常。汉化改的是游戏安装目录里的字体资产，重装或验证完整性会把它换回原版
+   （字库没有汉字），而中文书文件在 AppData\LocalLow 里、不会被删 ——
+   于是就成了"中文书 + 英文字体"= 全方块。
+   解决办法：退出游戏，重新双击一次 FFC_Bloodbones_ZH.exe 即可（书文件已是中文，会跳过覆盖）。
+
+Q: 装完还是英文？
+A: 确认补丁跑完时显示"汉化字体 4/4，字形 4082"，然后重启游戏（字体是启动时加载的）。
+
+Q: 装机后提示木马/被 360、火绒拦下？
+A: 安装器是 PyInstaller 打包的未签名程序，常见误报。可加入信任后运行；
+   担心的话可以用 --check 先看它会改什么，它只改上面列的两个文件，不联网、不碰存档。
+
+【声明】
+  · 本汉化为同人翻译，供已购买正版游戏的玩家学习交流使用，请勿用于商业用途。
+  · 补丁不含游戏本体；请自行购买正版。
+  · 中文字形图集由 Noto Sans SC（SIL Open Font License 1.1）生成，可自由分发。
+  · 游戏原作版权归 Tin Man Games / Steve Jackson & Ian Livingstone 所有。
+
+【反馈】
+  出问题时请提供：安装器窗口截图、Windows 版本、游戏版本号；
+  需要还原就运行 --restore。
