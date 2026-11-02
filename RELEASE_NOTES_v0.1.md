@@ -11,7 +11,7 @@
 
 ### 安装
 1. **完全退出游戏**
-2. 下载并解压 `FFC_Bloodbones_中文汉化_v0.1.zip`
+2. 下载并解压 `FFC_Bloodbones_ZH_v0.1.zip`
 3. 双击 `FFC_Bloodbones_ZH.exe` —— 自动找 Steam 目录、自动备份、自动校验
 4. 看到「汉化字体 4/4，字形 4082；书 639 段」即成功，从 Steam 启动游戏
 

@@ -25,7 +25,7 @@
 
 ## 下载安装
 
-1. 到 [Releases](../../releases) 下载 `FFC_Bloodbones_中文汉化_v0.1.zip`（约 38 MB）
+1. 到 [Releases](../../releases) 下载 `FFC_Bloodbones_ZH_v0.1.zip`（约 38 MB）
 2. **完全退出游戏**（Steam 里显示「停止」才算退了）
 3. 双击 `FFC_Bloodbones_ZH.exe`
 4. 它会自己找 Steam 游戏目录；找不到时让你粘一次路径
